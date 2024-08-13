@@ -1,6 +1,11 @@
 import React from 'react'
 import './Weather.css'
 import search_icon from '../assets/search.png'
+import clear_icon from '../assets/clear.png'
+
+
+
+
 
 const Weather = () => {
   return (
@@ -10,6 +15,10 @@ const Weather = () => {
         <input type="text" placeholder='Search' />
         <img src={search_icon} alt="" />
       </div>
+      
+      <img src= {clear_icon} alt='' className='weather-icon'/>
+      <p className='temperature'>16 degree c</p>
+      <p className='location'>London</p>
       
     </div>
   )
