@@ -11,7 +11,7 @@ import wind_icon from '../assets/wind.png'
 
 const Weather = () => {
 
-  const search= async(city)=>{
+  const search = async(city)=>{
     try{
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.VITE_APP_ID}`;
 
@@ -25,8 +25,8 @@ const Weather = () => {
   }
 
   useEffect (()=>{
-    search("London");
-  })
+    search("London")
+  },[])
   return (
     <div className='weather'>
 
